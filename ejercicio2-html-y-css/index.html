@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css" />
   <title>Login</title>
 </head>
 <body>
-  
+  <main>
+    <article class="login-container">
+      <form class="login-form" action="POST" id="login-form" >
+        <legend class="login-header">
+          Login
+        </legend>
+        <div class="input-container">
+          <label class="label" for="email">Email</label>
+          <input
+          class="field"
+          id="email" 
+          type="email" 
+          name="email" 
+          autocomplete="off" 
+          required />
+        </div>
+        <div class="input-container">
+          <label class="label" for="password">Password</label>
+          <input class="field" id="password"type="password" name="password" required />
+        </div>
+        <div class="input-container">
+          <label class="label" for="genero">Género</label>
+          <select class="field" id="genero" name="genero" required>
+            <option value="F">Femenino</option>
+            <option value="M">Masculino</option>
+            <option value="i">Indefinido</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="acepto">
+            <input class="terms-fiels" type="checkbox" name="acepto" id="acepto" /> 
+            Acepto los términos
+          </label>
+        </div>
+        <div class="submit-container">
+          <button class="login-submit" id="login-submit" type="submit">Ingresar</button>
+        </div>
+      </form>
+    </article>
+  </main> 
 </body>
 </html>
+
